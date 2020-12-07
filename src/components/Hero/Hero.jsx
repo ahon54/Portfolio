@@ -4,10 +4,11 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import Typed from 'react-typed';
+import HeroImg from '../Image/HeroImg';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { title, name, subtitle, cta, img } = hero;
  
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -25,11 +26,10 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
-      {/* <video autoPlay loop muted src={Video} type="images/mp4" /> */}
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
-            <span className="text-color-main">{name || 'Your Name'}</span>
+            <span className="text-color-main">{name}</span>
             <br />
             <Typed
               strings={[
@@ -42,14 +42,19 @@ const Header = () => {
               backSpeed={30}
               showCursor={false}
               loop
-                />
+            />
+            <div className="hero-wrapper__image">
+              <div data-tilt className="thumbnail rounded">
+                <HeroImg alt="logo picture" filename= {img} />
+              </div>
+            </div>
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
-                {cta || 'Know more'}
+                {cta }
               </Link>
             </span>
           </p>

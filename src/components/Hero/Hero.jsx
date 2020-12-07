@@ -43,11 +43,11 @@ const Header = () => {
               showCursor={false}
               loop
             />
-            <div className="hero-wrapper__image">
+            {/* <div className="hero-wrapper__image">
               <div data-tilt className="thumbnail rounded">
                 <HeroImg alt="logo picture" filename= {img} />
               </div>
-            </div>
+            </div> */}
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

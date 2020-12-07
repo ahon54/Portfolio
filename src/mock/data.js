@@ -22,7 +22,7 @@ export const aboutData = {
   paragraphOne: 'Hi I’m Adrian and I am currently enrolled in Full-Stack Web Development at BCIT. ',
   paragraphTwo: 'Enthusiastic web developer with a constant desire for learning and self-improvement. My interests are front-end, back-end, and learning new frameworks, and find ways to write clean code.',
   paragraphThree: 'I love to create modern web applications. If you are interested in working together, or just feel like connecting, please view through this page.',
-  resume: 'https://drive.google.com/file/d/1IXIfBwx0ao-VRYh7zkOVF6LoInONE9SE/view'
+  resume: 'https://drive.google.com/file/d/1IXIfBwx0ao-VRYh7zkOVF6LoInONE9SE/view?usp=sharing'
 };
 
 // PROJECTS DATA

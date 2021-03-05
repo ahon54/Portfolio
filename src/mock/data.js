@@ -32,7 +32,7 @@ export const projectsData = [
     img: 'NoLine.png',
     title: 'NoLine',
     info: 'This is an app that saves time for our users by displaying restaurant capacity and estimated wait times live based on data input from the community. I am the back-end developer in charge of all the logic and did some integrations with the front-end. I collaborated with 4 Students from a program called Digital Design and Development at BCIT.',
-    info2: 'React-native, JavaScript, Friebase',
+    info2: 'React-native, JavaScript, Firebase',
     url: 'http://noline.ca/',
     repo: 'https://github.com/anthonycervi/NoLineFrontEnd',
   },
